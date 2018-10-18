@@ -1,0 +1,22 @@
+
+[{
+	"name": "akash",
+	"rollnum": 33,
+	"color": "black",
+	"image": "image/img.png"
+}, {
+	"name": "mohan",
+	"rollnum": 44,
+	"color": "red",
+	"image": "image/img.png"
+}, {
+	"name": "hari",
+	"rollnum": 55,
+	"color": "blue",
+	"image": "image/img.png"
+}, {
+	"name": "mari",
+	"rollnum": 66,
+	"color": "orange",
+	"image": "image/img.png"
+}]

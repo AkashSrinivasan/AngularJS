@@ -1,0 +1,19 @@
+ <div class="content">
+    <button ng-click="order='name'">order by name</button>
+     <button ng-click="order='rollnum'">order by rollnumber</button>
+  <input type="text" ng-model="search"/>
+      <ul>
+          <li ng-repeat="student in names | orderBy:order | filter:search">
+            <img ng-src="{{student.image}}" style="margin: -12px 10px 0 0; float: left;width: 50px; border-radius: 50%;"/>
+              <h3>{{student.name}}-{{student.rollnum}}</h3>
+              <div class="remove" ng-click="removestudent(student)">x</div>
+              <span class="belt" style="background: {{student.color}}">{{student.color}} ID</span>
+          </li>      
+      </ul>
+      <form ng-submit="addStudent()">
+          <input type="text" placeholder="enter the name" ng-model="newStudent.name"/>
+          <input type="text" placeholder="enter the rollnumber" ng-model="newStudent.rollnum"/>
+          <input type="text" placeholder="enter the IDcolor" ng-model="newStudent.color"/>
+          <input type="submit" value="add new student"/>
+      </form>
+</div>
